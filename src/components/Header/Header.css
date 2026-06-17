@@ -1,0 +1,154 @@
+.navbar {
+  width: 100vw;
+  height: 70px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  gap: 40px;
+}
+
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-icon::before {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  background: #d62028;
+  border-radius: 50%;
+  left: 0;
+  top: 1px;
+}
+
+.logo-icon::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 86px;
+  background: #000;
+  border-radius: 50%;
+  left: 37px;
+  top: 1px;
+}
+
+.logo-icon span,
+.logo-icon strong {
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #ff292f;
+}
+
+.city-select {
+  margin-left: 10px;
+}
+
+.city-select select {
+  width: 235px;
+  height: 33px;
+  background: #050505;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.user-area {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.register-button {
+  height: 39px;
+  padding: 0 18px;
+  border: 2px solid #ef292e;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.register-button:hover,.user-button:hover {
+  background: #ff1e26;
+  box-shadow: 0 0 5px red;
+}
+
+.user-button {
+  height: 39px;
+  min-width: 170px;
+  border: 2px solid rgb(252, 0, 0);
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: rgb(0, 0, 0);
+}
+
+.logout-button {
+  height: 36px;
+  padding: 0 16px;
+  border: 1px solid #777;
+  border-radius: 20px;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #ef292e;
+  border-color: #ef292e;
+}

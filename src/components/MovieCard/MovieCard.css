@@ -1,0 +1,64 @@
+.movie-card {
+  position: relative;
+  width: 35vh;
+  height: 50vh;
+  background: #111;
+  overflow: hidden;
+  border-radius: 6px;
+  transition:0.1s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.movie-card:hover{
+    filter: brightness(1.3) contrast(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.empty-poster {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #222, #444);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+  font-weight: bold;
+}
+
+.tag {
+  position: absolute;
+  top: 9px;
+  left: -34px;
+  width: 120px;
+  background: #ff1515;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+
+/*--------------ajustes para RESPONSIVE-------------------*/
+@media (max-width: 900px) {
+    .movie-card {
+    width: 30vh;
+    height: 45vh;
+  } 
+}
+
+@media (max-width: 800px) {
+    .movie-card {
+    width: 20vh;
+    height: 25vh;
+  } 
+}

@@ -1,0 +1,52 @@
+.movies-section {
+  background: #06213d00;
+  padding: 15px 0 25px;
+}
+
+.movies-grid {
+  width: 83%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+/*--------------------AJUSTES PARA RESPONSIVE-------------------*/
+
+@media (max-width: 1500px) {
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 800px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+@media (max-width: 700px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

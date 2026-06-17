@@ -1,0 +1,78 @@
+.hero {
+  width: 100vw;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.hero-center p {
+  font-size: 38px;
+  color: #d0d0d0;
+  font-weight: bold;
+  margin-top: 15px;
+  text-shadow: 2px 3px 5px black;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 90px;
+  background: transparent;
+  border: none;
+  color: #cf1f28;
+  font-size: 90px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-arrow.left {
+  left: 75px;
+  transition: ease-in-out 0.2s;
+
+}
+
+.slider-arrow.right {
+  right: 75px;
+  transition: ease-in-out 0.2s;
+}
+
+.slider-arrow:hover {
+  color: #ff292f;
+  text-shadow: 0 0 10px rgb(250, 0, 0);
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 6;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  background: #777;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #ef292e;
+}
+
+.social-icons {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: flex;
+  gap: 6px;
+  font-size: 36px;
+  color: gray;
+}
